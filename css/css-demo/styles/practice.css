@@ -13,3 +13,10 @@ section#contact-info {
   font-size: .8em;
 }
 
+a:hover {
+  color: e4e6e5;
+}
+
+section#work-experience section#test {
+  color: blue;
+}
