@@ -1,0 +1,21 @@
+img#octopus {
+  padding-top: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+img#glasses {
+  position: fixed;
+  top: 186px;
+  left: 779px;
+  z-index: 1;
+}
+
+img#hat {
+  position: fixed;
+  top: 30px;
+  left: 715px;
+}
+
