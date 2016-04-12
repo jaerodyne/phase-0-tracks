@@ -1,0 +1,28 @@
+header {
+  width: 650px;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+    
+.column-1 {
+  display: block;
+  float: left;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.column-2 {
+  width: 300px;
+  margin-left: 350px;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px; 
+  right: 0px;
+  background-color: #efefef;
+  text-align: center;
+  width: 650px;
+}
