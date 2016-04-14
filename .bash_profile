@@ -1,3 +1,5 @@
+# Modified from: http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/
+
 export CLICOLOR=1
 
 export LSCOLORS=ExFxBxDxCxegedabagacad
