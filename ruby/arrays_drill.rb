@@ -3,10 +3,8 @@ def array(x,y,z)
   print a
 end
 
-def new_array(x,y,z,new_item)
-  a = [x, y, z]
-  a.push(new_item)
-  print a
+def new_array(arr, value)
+  arr.push(value)
 end
 
 empty_variable = []
@@ -41,6 +39,8 @@ p dinner
 
 array("a", "b", "c")
 
-new_array("a", "b", "c", "d")
+print new_array(["a", "b", "c"], "d")
 
-new_array("orange", "hunger", 3, 6, 8)
+print new_array(["orange", "hunger", 1], 2)
+
+print new_array(["I", "want", "candy"], 5)
