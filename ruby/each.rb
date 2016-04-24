@@ -1,18 +1,17 @@
 letters = ["a", "b", "c", "d", "e"]
-new_letters = []
+
 
 puts "Original data:"
 p letters
-p new_letters
+
 
 # iterate through the array with .each
 letters.each do |letter|
-  new_letters << letter.next
+  puts letter
 end
 
 puts "After .each call:"
 p letters
-p new_letters
 
 #################
 
