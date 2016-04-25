@@ -1,113 +1,96 @@
-# #Create a method that takes a spy's real name and creates a fake name with it
-
-# #Write methods to swap first and last name
-# #get user first name and capitalize
-# puts "First Name:"
-# first_name = gets.chomp.capitalize
-# #get user last name and capitalize
-# puts "Last Name:"
-# last_name = gets.chomp.capitalize
-# #convert first name to array
-# first_name = first_name.split(' ')
-
-# #convert last name to array
-# last_name = last_name.split(' ')
-
-# #Change all vowels to next vowel in aeiou
-# alias_name = []
-# #Change consonants to next consonant in alphabet
-# #maybe hardcode alphabet variable and downcase it for iteration?
-# #remember edge cases
-# #convert a string to an array
-# #figure out what letter is a vowel
-# #hardcode vowels?
-# #write method that takes vowel and return next vowel
-
-# #split full_name into individual characters
-# # full_name.each do |letter|
-# #   alias_name << letter.next
-# # end
-
-# # p full_name.split
-# # p alias_name
-
-# # full_name.map do |letter|
-# #   alias_name.
-
-# #add first_name and last_name array and store in full_name
-# full_name = first_name + last_name
-# #reverse full_name array to swap first and last name
-# full_name = full_name.reverse
-# print full_name
-
 #Create a method that takes a spy's real name and creates a fake name with it
 
-#Write methods to swap first and last name
-#get user first name and capitalize
+#add first_name and last_name and store in original_name
+#add original_name to name_database array
+#write a method that compares alphabet to characters in first name and last name
+#declare alphabet array
+#iterate through alphabet array
+#If letter in first_name matches any vowels in alphabet, change to next vowel
+#If consonant, change to next consonant
+#add new_first and new_last and store in full_name
+#reverse full_name array to swap first and last name
+#print original name and alias name
+
+first_name = ""
+name_database = []
+alias_database = []
+
+puts "Get your super secret name. (Type 'quit' when done)"
+
+until first_name == 'quit' do
 puts "First Name:"
 first_name = gets.chomp.downcase
-#get user last name and capitalize
-# puts "Last Name:"
-# last_name = gets.chomp.downcase
-#convert first name to array of characters
-first_name = first_name.split('')
-puts first_name
-
-#write a method that compares vowels to characters in first name
-# def next_vowel
-#declare vowels array
-# vowels = ['a', 'e', 'i', 'o', 'u']
-#iterate through vowels array
-#If letter in first name matches any character in vowels, use next letter in vowels
-
-first_name_vowels = first_name.select { |vowel| vowel =~ /[aeiou]/ }
-puts first_name_vowels
-
-first_name_vowels.each do |letter|
   
+  if first_name == 'quit'
+    break
+  else
+    puts "Last Name:"
+    last_name = gets.chomp.downcase
+    if last_name == 'quit'    
+      break
+  end
 
-#use select 
-#shift vowels
+original_name = first_name.capitalize + " " + last_name.capitalize
+original_name = original_name.split('')
+original_name = original_name.join('')
+name_database.push(original_name)
 
-#Change all vowels to next vowel in aeiou
+alphabet = {
+  'a' => 'e', 
+  'b' => 'c',
+  'c' => 'd',
+  'd' => 'f',
+  'e' => 'i',
+  'f' => 'g',
+  'g' => 'h',
+  'h' => 'j',
+  'i' => 'o', 
+  'j' => 'k',
+  'k' => 'l',
+  'l' => 'm',
+  'm' => 'n',
+  'n' => 'p',
+  'o' => 'u',
+  'p' => 'q',
+  'q' => 'r',
+  'r' => 's',
+  's' => 't',
+  't' => 'v',
+  'u' => 'a',
+  'v' => 'w',
+  'w' => 'x',
+  'x' => 'y',
+  'y' => 'z',
+  'z' => 'b'
+}
 
-#If consonant, switch to next letter
+new_first =[]
+  first_name.each_char do |letter|
+    first = alphabet[letter]
+    new_first.push(first)
+  end
 
-# else
-#   first_name.map! do |letter|
-#     puts letter
-#     letter.next
-# end
+new_first = new_first.join('').capitalize
+new_first = new_first.split(' ')
 
-#convert last name to array
-# last_name = last_name.split('')
+new_last =[]
+  last_name.each_char do |letter|
+    last = alphabet[letter]
+    new_last.push(last)
+  end
 
+new_last = new_last.join('').capitalize
+new_last = new_last.split(' ')
 
-#Change all vowels to next vowel in aeiou
+puts full_name = new_first + new_last
+full_name = full_name.reverse
+full_name = full_name.join(' ')
+puts "Your alias is #{full_name}."
 
-#Change consonants to next consonant in alphabet
-#maybe hardcode alphabet variable and downcase it for iteration?
-#remember edge cases
-#convert a string to an array
-#figure out what letter is a vowel
-#hardcode vowels?
-#write method that takes vowel and return next vowel
+alias_database.push(full_name)
 
+puts "Give me another alias. (Remember: type 'quit' when done.)"
+end
 
-
-#split full_name into individual characters
-# full_name.each do |letter|
-#   alias_name << letter.next
-# end
-
-# p full_name.split
-# p alias_name
-
-# full_name.map do |letter|
-#   alias_name.
-
-#add first_name and last_name array and store in full_name
-# full_name = first_name + last_name
-#reverse full_name array to swap first and last name
-# full_name = full_name.reverse
-# print full_name
+puts "#{name_database} is #{alias_database}!"
+end
