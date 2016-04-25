@@ -1,0 +1,39 @@
+Data Structures
+1. Why are data structures useful in programming?
+They help to organize data into smaller pieces so that we can manipulate them more easily.
+
+Arrays
+2. Define "array" and describe the characteristics of an array.
+An array is a list or collection of items that starts at a 0 index, meaning that the first item in an array is at index 0, the second is at index 1, and so on and so forth. Arrays are ordered, meaning that when you access an item at its index, it will always be at that index. So if 'a' is at index 0, when you call index 0, the program will always return the item at that index, which is 'a' in this case.
+3. Give two original examples of data sets that an array might be well-suited for.
+gym bag = ["workout shirt", "workout shorts", "water bottle", "towel, "gym shoes", "deodorant"]
+bills = ["credit", "insurance", "student loans", "therapy"]
+
+Hashes
+4. Define "hash" and describe the characteristics of a hash.
+Hash is the structure for labeled data that is organized into key-value pairs, much like a dictionary. It can contain symbols, strings, integers and bools, amongst other things. Sometimes hash keys contain hash rockets (=>) that separate keys from values instead of using colons. 
+5. Give two original examples of data sets that a hash might be well-suited for. student = {
+    name: ""
+    id_number: 123
+    grade: nil
+    fav_subject: "lunch"
+}
+
+meals = {
+    breakfast: "steak and eggs"
+    lunch: "chef salad"
+    dinner: "fried fish"
+    dessert: "Ben and Jerry's Pistachio Pistachio"
+}
+
+Iteration
+6. Why is iteration useful?
+It saves you from writing code over and over again if you want to accomplish a task multiple times.
+7. Give an example of a real-life task that would require iteration if you wrote an algorithm for it.
+If you had several loads of laundry to do, you could write an algorithm that for each instance, required you to open the washer door, put in the detergent, then the clothes, close the washer, set the cycle speed and press start. 
+
+Blocks
+8. What is a block?
+A block is a portable code that makes up its own little program.
+9. What is a block parameter, and where does its value come from?
+A block parameter essentially functions like a variable name. It is located within pipes like: |x| and is set by the programmer.

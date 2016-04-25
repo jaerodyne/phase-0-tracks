@@ -1,4 +1,4 @@
-# write a method that takes a block
+ # write a method that takes a block
 
 # define a method for favorite color
 def favorite_color
