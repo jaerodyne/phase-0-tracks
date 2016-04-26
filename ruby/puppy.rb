@@ -1,7 +1,7 @@
 # SPECIES ------------------------
 # Cuddlus Buddeus
 
-# CHARACTERISTICS ----------------
+# CHARACTERISTICS/DATA/ATTRIBUTES/STATE ----------------
 # Friendly: yes
 # Cuddle rating: 10
 # Name: varies
