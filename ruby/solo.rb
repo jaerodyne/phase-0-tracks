@@ -20,10 +20,11 @@ class Guitar
     # puts "#{color}"
     # @cost = cost
     # puts "#{cost}"
+    # @guitar_collection = ['Hollowbody II', '513', 'Custom 24']
   end
 
-  def play
-    puts "Ready to play 3 chords on this #{model}!"
+  def play(guitar)
+    puts "Ready to play 3 chords on this #{guitar}!"
     puts "Just kidding, let's play something else to celebrate International Jazz Day."
   end
 
@@ -62,15 +63,15 @@ end
 puts "Glad you came to your senses."
 puts "So what model do you want to use? (Hollowbody II/513/Custom 24)."
 guitar_collection = ['Hollowbody II', '513', 'Custom 24']
-model = gets.chomp
+
 #pick one of 3
-if model = guitar_collection.any?
-  puts "This is #{new_guitar.model}"
-else
+model = gets.chomp
+
+until guitar_collection.include? model
   puts "Looks like we don't have one in our collection yet. Choose the Hollowbody II/513/Custom 24."
   model = gets.chomp
 end
-
+new_guitar.play(model)
 # puts "Good choice."
 # puts "Now what color would you like?"
 # color = gets.chomp
