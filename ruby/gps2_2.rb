@@ -60,12 +60,8 @@
 # end
 
 # a=Grocery.new
-
 # a.new_list.add.remove.update.entire_list
-  
-
 # b=Grocery.new
-
 # b.new_list.add.remove.update.entire_list
 
 #After going over the gps instructions again after the pairing session, I realized that my partner and I were not supposed to use classes to finish the assignment. So I came up with my own solution to the challenge for my own learning:
@@ -98,3 +94,7 @@ add_item(list, "chocolate-covered strawberries", 5)
 p list
 final_print = final_print(list)
 p "This is the final list: #{final_print}"
+
+#Reflection
+
+# I learned that pseudocode is really helpful in creating a path for your thought process for your code. It's a lot better than going in blindly because doing that can cause you to lose a lot of time. Using an array in the beginning made a lot more sense because it was required that the words be split up, but since quantities of each item were eventually added, a hash became more appropriate for the situation. A method returns a value or a set of values. You can strings, arrays, integers, hashes, etc. into methods as arguments. Passing info through methods can be done by declaring a variable that contains the first method and then using that variable to add on other methods. I learned more about how to pass info between methods, which was great because I found that I still struggle with the topic. Things are a lot clearer for me now after doing this GPS on my own.
