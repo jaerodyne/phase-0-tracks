@@ -3,20 +3,11 @@
 
 // Example: headache == ehcadaeh
 
-var str = "headache";
-var reversedString = ""
-
-// function reverse(str) {
-//   var reversed_string = "";
+function reverse(str) {
+  var reversedString = ""
   for (var i = str.length -1; i >= 0; i--) {
   reversedString += str[i]}
+  return reversedString
+}
 
-
-  console.log(reversedString);
-// }
-
-// console.log(reverse("headache"));
-
-// for (var count = 10; count >= 0; count--) {
-//     console.log(count)
-// }
+console.log(reverse("headache"));
