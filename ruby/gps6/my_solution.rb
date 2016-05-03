@@ -1,6 +1,6 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Joy McCaffrey ].
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
@@ -82,6 +82,22 @@ california.virus_effects
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
 
+
+
+def print_list
+  states = []
+  STATE_DATA.each do |state, population_data|
+    state = state, population_data
+    states << state
+    p states
+    # state.virus_effects
+    # state = VirusPredictor.new(state, @population_density, @population)
+    # p "this #{state}"
+  end
+
+end
+
+print_list
 
 #=======================================================================
 # Reflection Section
