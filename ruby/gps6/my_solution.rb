@@ -85,13 +85,9 @@ alaska.virus_effects
 
 
 def print_list
-  states = []
   STATE_DATA.each do |state, population_data|
-    state = state, population_data
-    states << state
-    p states
-    # state.virus_effects
-    # state = VirusPredictor.new(state, @population_density, @population)
+    state = VirusPredictor.new(state, population_data[:population_data][:population])
+    state.virus_effects
     # p "this #{state}"
   end
 
