@@ -40,41 +40,79 @@
 // console.log(tamir.name)
 // console.log(tamir.age)
 
-// firstName = {}
-// secondName = {}
-
-name = {}
-// firstAge = {}
-var matched = false
-var parsed = "";
-
-function personalInfo(person1, person2) {
-  this.person1 = person1;
-  this.person2 = person2;
-  // console.log(Object.keys(person1, person2))
   // for var k in Object.keys(person1, person2) {
   //   if person1[k] = person2[k];
-  //     matched = true;
+  //     return true;
   // }
-  for (var k in person1) {
-    if (person1.hasOwnProperty(k));
-      console.log('This is' + (name[k] = person1[k]))
-      matched = true;
+
+// var matched = false
+
+
+  // console.log(Object.keys(person1, person2))
+  //     console.log('This is' + (name[k] = person1[k]))
+  //     matched = true;
+  // for (var a in person2) {
+  //   if (person2.hasOwnProperty(a));
+  //   matched = true;
+  //   console.log(name[k] = person2[k])
+    // }
   //   for (var l in age) {
   //     if (age.hasOwnProperty(l))()
   //       firstAge[l] = age[l]
   //   }
     
-  }
-  return matched;
-}
+  // return matched;
 
-console.log(parsed)
-var person1 = personalInfo ({name: "Steven", age: 54} )
-var person2 = personalInfo ({name: "Tamir", age: 54})
+// steven = {}
+// tamir = {}
+
+// function personalInfo(person1, person2) {
+//   this.person1 = person1;
+//   this.person2 = person2;
+//   for (var k in person1) {
+//     console.log(k)
+  //   var subObj = person1[k];
+  //   for (var data = subObj) {
+  //     console.log(data)
+  //   }
+  // }
+//   for (var key in person1) {  
+//     if (person1.hasOwnProperty(key)) {
+//         var subObj = person1[key];
+//         for (var subKey in subObj) {
+//             if (subObj.hasOwnProperty(subKey)) {
+//                 console.log(subKey);
+//             }
+//         }
+//     }
+// }
+// }
+// }
+// function personalInfo(person1, person2) {
+//   this.person1 = person1;
+//   this.person2 = person2;
+//   for (var k in person1) {
+//     if (person1.hasOwnProperty(k)) {
+//       // if (!person2.hasOwnProperty(k)) return false;
+//       if (person1[k] != person2[k]) return false;
+//       }
+//     }
+//  for (var i in person2) {
+//     if (person2.hasOwnProperty(i)) {
+//       // if (!person1.hasOwnProperty(i)) return false;
+//       if (person1[i] != person2[i]) return false;
+//       }
+//     }
+// return true;
+
+
+// }
+
+// var person1 = personalInfo ({name: "Steven", age: 54} )
+// var person2 = personalInfo ({name: "Tamir", age: 54})
 
 //write function that takes an integer for length and builds and returns an array of strings of the given length
-//argument of 3 returns random array of 3 words
+//therefore, an argument of 3 returns random array of 3 words
 //ex: randomInt = 3 
 //array = ["Lalala", "Derpaderp", "Yay"]
 //words should be of random varying length, with minimum 1 letter and max 10 letters
@@ -84,16 +122,18 @@ var person2 = personalInfo ({name: "Tamir", age: 54})
 //print result
 //generate random number 
 
-// function randomize() {
-//     var text = "";
-//     var alphabet = "abcdefghijklmnopqrstuvwxyz";
+function randomize() {
+    var text = "";
+    var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+    var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-//     for( var i=0; i <= 10 ; i++ )
-//         text += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+    for( var i=0; i < str_length ; i++ ) {
+        text += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+}
+    return text;
+}
 
-//     return text;
-// }
 
-// console.log(randomize())
+console.log(randomize())
 
 
