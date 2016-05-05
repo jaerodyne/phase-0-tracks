@@ -6,6 +6,7 @@ var names = ["bob", "kevin", "becky", "joe"]
 colors.push("cerulean")
 names.push("pablo")
 
+horseAndColor = {}
 for (var i = -1; i < names.length -1; i++) {
   horseAndColor[names[i+1]] = colors[i+1]
 }
