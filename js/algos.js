@@ -22,42 +22,23 @@
 // longestWord(['juxtaposition', 'enigma', 'transmogrification'])
 
 //write function that takes two objects and checks to see if they share at least one key-value pair
+//compare first key-value pair to second key-value pair
 // check if name in one key-value pair matches name in another key-value pair
 // check if age in one key-value pair matches age in another key-value pair
 // ex: {name: "Steven", age: 54} and {name: "Tamir", age: 54} match because their age is the same
-
 
 // console(firstPerson[name] = value) == (secondPerson[name] = value)
 
 // var firstPerson = {name: "jill", age: 52, gender:"female"};
 // var secondPerson = {age: 12, name: "amanda", gender: "female"};
 
-// for (var i = 0; firstPerson == secondPerson; i++)
-
-
-// var tamir = {name: "Tamir", age: 54}
-
 // var matched = true
-
-
-// function personalInfo(name, age) {
-//   this.name = name;
-//   this.age = age;
-//   for (var i in name) {
-//     if (name.hasOwnProperty(i))
-//     console.log(name[i]);
-//   }
-// }
 
 // var names = personalInfo({name: "Steven", age: 54}, {name: "Tamir", age: 54})
 // console.log(steven.name)
 // console.log(steven.age)
 // console.log(tamir.name)
 // console.log(tamir.age)
-
-//compare name variable to other name variable
-//loop through each age
-//print each name, add to firstName hash
 
 // firstName = {}
 // secondName = {}
@@ -77,7 +58,8 @@
 //   }
 // }
 
-// var people = personalInfo({name: "Steven", age: 54}, {name: "Tamir", age: 54})
+// var person1 = personalInfo {name: "Steven", age: 54} 
+// var person2 = personalInfo {name: "Tamir", age: 54})
 
 //write function that takes an integer for length and builds and returns an array of strings of the given length
 //argument of 3 returns random array of 3 words
@@ -90,16 +72,16 @@
 //print result
 //generate random number 
 
-function randomize()
-{
-    var text = "";
-    var possible = "abcdefghijklmnopqrstuvwxyz";
+// function randomize() {
+//     var text = "";
+//     var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    for( var i=0; i <= 10 ; i++ )
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+//     for( var i=0; i <= 10 ; i++ )
+//         text += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
 
-    return text;
-}
+//     return text;
+// }
 
-console.log(randomize())
+// console.log(randomize())
+
 
