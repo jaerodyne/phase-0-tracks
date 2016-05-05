@@ -32,7 +32,7 @@
 // var firstPerson = {name: "jill", age: 52, gender:"female"};
 // var secondPerson = {age: 12, name: "amanda", gender: "female"};
 
-// var matched = true
+
 
 // var names = personalInfo({name: "Steven", age: 54}, {name: "Tamir", age: 54})
 // console.log(steven.name)
@@ -43,23 +43,35 @@
 // firstName = {}
 // secondName = {}
 
-// firstName = {}
+name = {}
 // firstAge = {}
+var matched = false
+var parsed = "";
 
-// function personalInfo(person1, person2) {
-//   for (var k in name) {
-//     if (name.hasOwnProperty(k))
-//       firstName[k] = name [k]
-//       console.log(firstName)
-//     for (var l in age) {
-//       if (age.hasOwnProperty(l))
-//         firstAge[l] = age[l]
-//     }
-//   }
-// }
+function personalInfo(person1, person2) {
+  this.person1 = person1;
+  this.person2 = person2;
+  // console.log(Object.keys(person1, person2))
+  // for var k in Object.keys(person1, person2) {
+  //   if person1[k] = person2[k];
+  //     matched = true;
+  // }
+  for (var k in person1) {
+    if (person1.hasOwnProperty(k));
+      console.log('This is' + (name[k] = person1[k]))
+      matched = true;
+  //   for (var l in age) {
+  //     if (age.hasOwnProperty(l))()
+  //       firstAge[l] = age[l]
+  //   }
+    
+  }
+  return matched;
+}
 
-// var person1 = personalInfo {name: "Steven", age: 54} 
-// var person2 = personalInfo {name: "Tamir", age: 54})
+console.log(parsed)
+var person1 = personalInfo ({name: "Steven", age: 54} )
+var person2 = personalInfo ({name: "Tamir", age: 54})
 
 //write function that takes an integer for length and builds and returns an array of strings of the given length
 //argument of 3 returns random array of 3 words
