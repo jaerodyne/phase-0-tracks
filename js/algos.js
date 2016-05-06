@@ -116,24 +116,34 @@
 //ex: randomInt = 3 
 //array = ["Lalala", "Derpaderp", "Yay"]
 //words should be of random varying length, with minimum 1 letter and max 10 letters
+//figure out how to push text into array
 //add driver code that generates array 10 times
 //print array
 //feed array to longest word function
 //print result
 //generate random number 
 
+ var array = []
+
+
 function randomize() {
     var text = "";
+    console.log(array.push(text))   
     var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-    for( var i=0; i < str_length ; i++ ) {
+    for ( var i=0; i < str_length ; i++ ) {
         text += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+        
+       }
+       return text;
 }
-    return text;
-}
-
 
 console.log(randomize())
 
+// function omg(str) {
+//   var str = ""
+//   console.log(array.push(str))
+// }
 
+// console.log("what")
