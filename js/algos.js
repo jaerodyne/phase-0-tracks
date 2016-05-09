@@ -16,9 +16,9 @@ function longestWord(array) {
   return console.log('And the winner is ' + word + ' with a length of ' + count + '!')
 }
 
-longestWord(['long phrase', 'longest phrase', 'longer phrase'])
-longestWord(['supercalifragilisticexpialidocious', 'pneumonoultramicroscopicsilicovolcanoconiosis', 'yay'])
-longestWord(['juxtaposition', 'enigma', 'transmogrification'])
+// longestWord(['long phrase', 'longest phrase', 'longer phrase'])
+// longestWord(['supercalifragilisticexpialidocious', 'pneumonoultramicroscopicsilicovolcanoconiosis', 'yay'])
+// longestWord(['juxtaposition', 'enigma', 'transmogrification'])
 
 //write function that takes two objects and checks to see if they share at least one key-value pair
 // compare first key-value pair to second key-value pair
@@ -26,25 +26,25 @@ longestWord(['juxtaposition', 'enigma', 'transmogrification'])
 // check if age in one key-value pair matches age in another key-value pair
 // ex: {name: "Steven", age: 54} and {name: "Tamir", age: 54} match because their age is the same
 
-// function personalInfo(person1, person2) {
-//   this.person1 = person1;
-//   this.person2 = person2;
-//   var matched = false
+function personalInfo(person1, person2) {
+  this.person1 = person1;
+  this.person2 = person2;
+  var matched = false
 
-//   if (person1.name == person2.name) {
-//     matched = true;
-//   } else if (person1.age == person2.age) {
-//     matched = true;
-//   } else {
-//     matched = false;
-//   }
-//   console.log(matched)
-//   return matched;
-// }
+  if (person1.name == person2.name) {
+    matched = true;
+  } else if (person1.age == person2.age) {
+    matched = true;
+  } else {
+    matched = false;
+  }
+  console.log(matched)
+  return matched;
+}
 
-// personalInfo({name: "Steven", age: 54}, {name: "Tamir", age: 54})
-// personalInfo({name: "Alex", age: 54}, {name: "Alex", age: 12})
-// personalInfo({name: "Jack", age: 4}, {name: "Tommy", age: 6})
+personalInfo({name: "Steven", age: 54}, {name: "Tamir", age: 54})
+personalInfo({name: "Alex", age: 54}, {name: "Alex", age: 12})
+personalInfo({name: "Jack", age: 4}, {name: "Tommy", age: 6})
 
 //write function that takes an integer for length and builds and returns an array of strings of the given length
 //therefore, an argument of 3 returns random array of 3 words
@@ -77,7 +77,6 @@ function randomArray(int) {
 
 var arr1 = new randomArray(3)
 console.log(arr1)
-longestWord(["try", "this", "one"])
 var arr2 = new randomArray(3)
 console.log(arr2)
 var arr3 = new randomArray(3)
