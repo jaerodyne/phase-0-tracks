@@ -16,9 +16,9 @@ function longestWord(array) {
   return console.log('And the winner is ' + word + ' with a length of ' + count + '!')
 }
 
-// longestWord(['long phrase', 'longest phrase', 'longer phrase'])
-// longestWord(['supercalifragilisticexpialidocious', 'pneumonoultramicroscopicsilicovolcanoconiosis', 'yay'])
-// longestWord(['juxtaposition', 'enigma', 'transmogrification'])
+longestWord(['long phrase', 'longest phrase', 'longer phrase'])
+longestWord(['supercalifragilisticexpialidocious', 'pneumonoultramicroscopicsilicovolcanoconiosis', 'yay'])
+longestWord(['juxtaposition', 'enigma', 'transmogrification'])
 
 //write function that takes two objects and checks to see if they share at least one key-value pair
 // compare first key-value pair to second key-value pair
