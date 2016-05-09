@@ -5,20 +5,20 @@
 // if word length is greater than current word length, reassign variable
 // return longest word in the array
 
-// function longestWord(array) {
-//   var word = ''
-//   var count = 0
-//   for (var i = 0; array[i].length >= count; i++) {
-//    console.log(count = array[i].length)
-//    console.log(word = array[i])
-// }
-// return console.log('And the winner is ' + word + ' with a length of ' + count + '!')
-// }
+function longestWord(array) {
+  this.array = array;
+  var word = ''
+  var count = 0
+    for (var i = 0; array[i].length >= count; i++) {
+     count = array[i].length
+     word = array[i]
+    }
+  return console.log('And the winner is ' + word + ' with a length of ' + count + '!')
+}
 
-
-// longestWord(['long phrase', 'longest phrase', 'longer phrase'])
-// longestWord(['supercalifragilisticexpialidocious', 'pneumonoultramicroscopicsilicovolcanoconiosis', 'yay'])
-// longestWord(['juxtaposition', 'enigma', 'transmogrification'])
+longestWord(['long phrase', 'longest phrase', 'longer phrase'])
+longestWord(['supercalifragilisticexpialidocious', 'pneumonoultramicroscopicsilicovolcanoconiosis', 'yay'])
+longestWord(['juxtaposition', 'enigma', 'transmogrification'])
 
 //write function that takes two objects and checks to see if they share at least one key-value pair
 // compare first key-value pair to second key-value pair
@@ -50,19 +50,18 @@
 //therefore, an argument of 3 returns random array of 3 words
 //ex: array = ["Lalala", "Derpaderp", "Yay"]
 //words should be of random varying length, with minimum 1 letter and max 10 letters
-//figure out how to push text into array
+//generate random number to get random word length
+//push word into array for number of times given in argument
 //add driver code that generates array 10 times
 //print array
 //feed array to longest word function
 //print result
-//generate random number 
-
-var arr = []
 
 function randomArray(int) {
-
+  
   this.int = int;
 
+  var arr = []
   var word = "";
   var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -70,50 +69,31 @@ function randomArray(int) {
   while (arr.length != int) {
     for ( var i=0; i < str_length ; i++ ) {
       word += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+      }
+     arr.push(word)
     }
-    console.log(word)
-    arr.push(word)
-    
-  }
-return console.log(arr)
-}
+  return arr
+}  
 
-randomArray(3)
+var arr1 = new randomArray(3)
+console.log(arr1)
+longestWord(["try", "this", "one"])
+var arr2 = new randomArray(3)
+console.log(arr2)
+var arr3 = new randomArray(3)
+console.log(arr3)
+var arr4 = new randomArray(3)
+console.log(arr4)
+var arr5 = new randomArray(3)
+console.log(arr5)
+var arr6 = new randomArray(3)
+console.log(arr6)
+var arr7 = new randomArray(3)
+console.log(arr7)
+var arr8 = new randomArray(3)
+console.log(arr8)
+var arr9 = new randomArray(3)
+console.log(arr9)
+var arr10 = new randomArray(3)
+console.log(arr10)
 
-//     var word = "";
-//     var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
-//     var alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-//     for ( var i=0; i < str_length ; i++ ) {
-//         word += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
-//        }
-//        return word;
-// }
-
-// for (var i = 0; i < int; i++) {
-// arr.push(word);
-// }
-
-// function randomize() {
-
-//     var word = "";
-//     var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
-//     var alphabet = "abcdefghijklmnopqrstuvwxyz";
-
-//     for ( var i=0; i < str_length ; i++ ) {
-//         word += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
-//        }
-//        return word;
-// }
-
-// console.log(randomize())
-
-// function longestWord(array) {
-//   var word = ''
-//   var count = 0
-//   for (var i = 0; array[i].length >= count; i++) {
-//    console.log(count = array[i].length)
-//    console.log(word = array[i])
-// }
-// return console.log('And the winner is ' + word + ' with a length of ' + count + '!')
-// }
