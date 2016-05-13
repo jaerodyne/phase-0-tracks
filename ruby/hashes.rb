@@ -106,17 +106,16 @@ end
 
 puts applicant
 
-# puts 'Are you sure about your decor theme? You'll have to live with it forever! (Type 'none' if you don't want to make any changes. Otherwise, press enter to move on.)'
-# affirmative = gets.chomp.downcase.to_s
+puts "Are you sure about your decor theme? You'll have to live with it forever! \n(Type 'none' if you don't want to make any changes. Otherwise, press enter to move on.)"
+affirmative = gets.chomp.downcase.to_s
 
-# if affirmative == 'none'
-#   puts 'Well, if you're sure.'
-# else
-#   applicant.delete(:decor_theme)
-#   puts 'What decor theme would you like to use instead?'
-#   decor_theme_alt = gets.chomp
-#   applicant[:decor_theme] = decor_theme_alt
-#   puts '#{applicant[:decor_theme]} it is!'
-#   puts applicant
-# end
+if affirmative == 'none'
+  puts "Well, if you're sure."
+else
+  puts 'What decor theme would you like to use instead?'
+  decor_theme_alt = gets.chomp
+  applicant[:decor_theme] = decor_theme_alt
+  puts '#{applicant[:decor_theme]} it is!'
+end
 
+print applicant
