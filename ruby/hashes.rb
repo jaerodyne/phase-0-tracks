@@ -92,10 +92,14 @@ else
   applicant[:carpet] = false
 end
 
-
-elsif tiles == 'y'
+if tiles == 'y'
   applicant[:tiles] = true
-elsif wooden_floors == 'y'
+else
+  applicant[:tiles] = false
+end
+
+
+ wooden_floors == 'y'
   applicant[:wooden_floors] = true
 
 
