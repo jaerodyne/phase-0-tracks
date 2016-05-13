@@ -14,6 +14,10 @@ address = gets.chomp.to_s
 
 puts 'Email:'
 email = gets.chomp.to_s
+until email.include? '@'
+  puts "Please enter in a valid email address, so we don't think you're a spy."
+  email = gets.chomp
+end
 
 puts 'Phone Number:'
 phone = gets.chomp.to_s
