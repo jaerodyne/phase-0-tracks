@@ -54,6 +54,10 @@ end
 
 puts 'Do you want wooden floors? (y/n)'
 wooden_floors = gets.chomp.to_s
+until wooden_floors == 'y' || wooden_floors == 'n'
+  puts 'Please enter a valid answer. (y/n)'
+  wooden_floors = gets.chomp.to_s
+end
 
 applicant = {
   name: name,
