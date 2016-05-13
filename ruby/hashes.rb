@@ -9,20 +9,20 @@
 puts "Enter in your name:"
 name = gets.chomp.to_s
 
-# puts "Address:"
-# address = gets.chomp.to_s
+puts "Address:"
+address = gets.chomp.to_s
 
-# puts "Email:"
-# email = gets.chomp.to_s
+puts "Email:"
+email = gets.chomp.to_s
 
-# puts "Phone Number:"
-# phone = gets.chomp.to_s
+puts "Phone Number:"
+phone = gets.chomp.to_s
 
-# puts "Number of rooms to be renovated:"
-# number_of_rooms = gets.chomp.to_i
+puts "Number of rooms to be renovated:"
+number_of_rooms = gets.chomp.to_i
 
-# puts "What's your decor theme?"
-# decor_theme = gets.chomp.to_s
+puts "What's your decor theme?"
+decor_theme = gets.chomp.to_s
 
 puts "Do you want a game room? (y/n)"
 game_room = gets.chomp.to_s
@@ -31,8 +31,12 @@ until game_room == "y" || game_room == "n"
   game_room = gets.chomp.to_s
 end
 
-# puts "Do you want a pool? (yes/no)"
-# pool = gets.chomp.to_s
+puts "Do you want a pool? (y/n)"
+pool = gets.chomp.to_s
+until pool == "y" || pool == "n"
+  puts "Please enter a valid answer. (y/n)"
+  pool = gets.chomp.to_s
+end
 
 # puts "Do you want carpet? (yes/no)"
 # carpet = gets.chomp.to_s
@@ -75,4 +79,10 @@ if game_room == "y"
   applicant[:game_room] = true
 else
   applicant[:game_room] = false
+end
+
+if pool == "y"
+  applicant[:pool] = true
+else
+  applicant[:pool] = false
 end
