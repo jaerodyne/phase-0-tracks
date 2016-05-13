@@ -7,60 +7,60 @@
 
 #USER INTERFACE
 puts 'Enter in your name:'
-name = gets.chomp.to_s
+name = gets.chomp.to_sym
 
 puts 'Address:'
-address = gets.chomp.to_s
+address = gets.chomp.to_sym
 
 puts 'Email:'
-email = gets.chomp.to_s
+email = gets.chomp
 until email.include? '@'
   puts "Please enter in a valid email address, so we don't think you're a spy."
   email = gets.chomp
 end
 
 puts 'Phone Number:'
-phone = gets.chomp.to_s
+phone = gets.chomp.to_sym
 
 puts 'Number of rooms to be renovated:'
 number_of_rooms = gets.chomp.to_i
 
 puts "What's your decor theme?"
-decor_theme = gets.chomp.to_s
+decor_theme = gets.chomp
 
 puts 'Do you want a game room? (y/n)'
-game_room = gets.chomp.to_s
+game_room = gets.chomp
 until game_room == 'y' || game_room == 'n'
   puts 'Please enter a valid answer. (y/n)'
-  game_room = gets.chomp.to_s
+  game_room = gets.chomp
 end
 
 puts 'Do you want a pool? (y/n)'
-pool = gets.chomp.to_s
+pool = gets.chomp
 until pool == 'y' || pool == 'n'
   puts 'Please enter a valid answer. (y/n)'
-  pool = gets.chomp.to_s
+  pool = gets.chomp
 end
 
 puts 'Do you want carpet? (y/n)'
-carpet = gets.chomp.to_s
+carpet = gets.chomp
 until carpet == 'y' || carpet == 'n'
   puts 'Please enter a valid answer. (y/n)'
-  carpet = gets.chomp.to_s
+  carpet = gets.chomp
 end
 
 puts 'Do you want tiles? (y/n)'
-tiles = gets.chomp.to_s
+tiles = gets.chomp
 until tiles == 'y' || tiles == 'n'
   puts 'Please enter a valid answer. (y/n)'
-  tiles = gets.chomp.to_s
+  tiles = gets.chomp
 end
 
 puts 'Do you want wooden floors? (y/n)'
-wooden_floors = gets.chomp.to_s
+wooden_floors = gets.chomp
 until wooden_floors == 'y' || wooden_floors == 'n'
   puts 'Please enter a valid answer. (y/n)'
-  wooden_floors = gets.chomp.to_s
+  wooden_floors = gets.chomp
 end
 
 applicant = {
@@ -111,7 +111,7 @@ end
 puts applicant
 
 puts "Are you sure about your decor theme? You'll have to live with it forever! \n(Type 'none' if you don't want to make any changes. Otherwise, press enter to move on.)"
-affirmative = gets.chomp.downcase.to_s
+affirmative = gets.chomp.downcase.to_sym
 
 if affirmative == 'none'
   puts "Well, if you're sure."
