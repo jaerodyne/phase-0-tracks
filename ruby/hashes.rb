@@ -98,10 +98,11 @@ else
   applicant[:tiles] = false
 end
 
-
- wooden_floors == 'y'
+if wooden_floors == 'y'
   applicant[:wooden_floors] = true
-
+else
+  applicant[:wooden_floors] = false
+end
 
 puts applicant
 
