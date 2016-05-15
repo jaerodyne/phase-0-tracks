@@ -45,16 +45,23 @@ def next_letter(str)
   )
 end
 
-# next_letter('abacus')
+def swap_name(name)
+  array = next_letter(name).split(' ')
+  array = array.map(&:capitalize)
+  array[0], array[1] = array[1], array[0]
+  spy_name = array.join(' ')
+  puts spy_name
+end
 
 #User Interface
 puts "What's your name?"
 full_name = gets.chomp
 
-array = next_letter(full_name).split(' ')
-array = array.map(&:capitalize)
-array[0], array[1] = array[1], array[0]
-spy_name = array.join(' ')
-puts spy_name
+method(full_name)
+# array = next_letter(full_name).split(' ')
+# array = array.map(&:capitalize)
+# array[0], array[1] = array[1], array[0]
+# spy_name = array.join(' ')
+# puts spy_name
 
 
