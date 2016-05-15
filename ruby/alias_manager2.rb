@@ -45,23 +45,32 @@ def next_letter(str)
   )
 end
 
+def add_to_database(real, alias_name)
+  alias_database = {}
+  alias_database[real] = alias_name
+  puts alias_database
+end
+
 def swap_name(name)
   array = next_letter(name).split(' ')
   array = array.map(&:capitalize)
   array[0], array[1] = array[1], array[0]
   spy_name = array.join(' ')
-  puts spy_name
+  add_to_database(name, spy_name)
 end
 
+
+# alias_database = {}
 #User Interface
-puts "What's your name?"
-full_name = gets.chomp
+count = 0
+# until count == 5
+  puts "What's your name?"
+  full_name = gets.chomp
+  new_name = swap_name(full_name)
+  # puts new_name
 
-method(full_name)
-# array = next_letter(full_name).split(' ')
-# array = array.map(&:capitalize)
-# array[0], array[1] = array[1], array[0]
-# spy_name = array.join(' ')
-# puts spy_name
+  # count+=1
+# end
 
+# puts alias_database
 
