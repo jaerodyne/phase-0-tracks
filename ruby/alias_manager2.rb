@@ -50,27 +50,27 @@ def swap_name(real_name)
   array = array.map(&:capitalize)
   array[0], array[1] = array[1], array[0]
   spy_name = array.join(' ')
-  add_to_database(real_name, spy_name)
 end
 
-def add_to_database(real_name, spy_name)
-  puts "#{real_name} and #{spy_name}"
-  # alias_database = Hash.new { |hash, key| hash[key] = [] }
-  # word = swap_name(real_name)
-  # alias_database[real_name] = word
-  # puts alias_database
+def add_to_database(alias_database, real_name, spy_name)
+  alias_database[real_name] = spy_name
+  final_print(alias_database)
 end
+
+def final_print(alias_database)
+  alias_database.each { |name, aliases| puts "#{name} is actually #{aliases}!" }
+end
+
+alias_database = Hash.new { |hash, key| hash[key] = [] }
 
 #User Interface
 count = 0
-until count == 5
+until count == 2
   puts "What's your name?"
   real_name = gets.chomp
-  # add_to_database(full_name)
-  new_name = swap_name(real_name)
-  # add_to_database(full_name, new_name)
+  spy_name = swap_name(real_name)
+  add_to_database(alias_database, real_name, spy_name)
   count+=1
 end
 
-# puts alias_database
 
