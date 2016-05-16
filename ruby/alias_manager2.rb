@@ -54,7 +54,6 @@ end
 
 def add_to_database(alias_database, real_name, spy_name)
   alias_database[real_name] = spy_name
-  final_print(alias_database)
 end
 
 def final_print(alias_database)
@@ -64,13 +63,18 @@ end
 alias_database = Hash.new { |hash, key| hash[key] = [] }
 
 #User Interface
-count = 0
-until count == 2
+real_name = ""
+
+until real_name == "quit"
   puts "What's your name?"
   real_name = gets.chomp
-  spy_name = swap_name(real_name)
-  add_to_database(alias_database, real_name, spy_name)
-  count+=1
+    if real_name == "quit"
+      break
+    else
+      spy_name = swap_name(real_name)
+      add_to_database(alias_database, real_name, spy_name)
+      puts "Type 'quit' if you're done generating aliases."
+  end
 end
 
-
+final_print(alias_database)
