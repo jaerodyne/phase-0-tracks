@@ -18,7 +18,7 @@ class Santa
 
 end
 
-claus = Santa.new
+claus = Santa.new("Androgynous", "Alien Race")
 puts claus
 puts claus.speak
 puts claus.eat_milk_and_cookies("snickerdoodle")
