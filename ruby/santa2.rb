@@ -65,3 +65,8 @@ ethnicities = [
 ]
 
 nick = Santa.new(genders.sample, ethnicities.sample)
+nicole = Santa.new(genders[0], ethnicities[2])
+
+3.times do |santa|
+  Santa.new(genders.sample, ethnicities.sample)
+end
