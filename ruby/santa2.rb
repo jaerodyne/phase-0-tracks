@@ -6,6 +6,8 @@ class Santa
     age = 0
     reindeer_ranking = ['Rudolph', 'Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', 'Cupid', 'Donner', 'Blitzen']
     puts 'Initializing Santa instance...'
+    puts @gender
+    puts @ethnicity
   end
 
   def speak
@@ -61,3 +63,5 @@ ethnicities = [
   'German',
   'Italian'
 ]
+
+nick = Santa.new(genders.sample, ethnicities.sample)
