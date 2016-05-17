@@ -16,3 +16,4 @@ end
 
 claus = Santa.new
 puts claus
+puts claus.speak
