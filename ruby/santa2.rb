@@ -17,3 +17,4 @@ end
 claus = Santa.new
 puts claus
 puts claus.speak
+puts claus.eat_milk_and_cookies("snickerdoodle")
