@@ -18,6 +18,10 @@ class Santa
     puts 'That was a good #{cookie}!'
   end
 
+  def celebrate_birthday(age)
+    age += 1
+  end
+
 end
 
 claus = Santa.new('Androgynous', 'Alien Race')
@@ -70,3 +74,5 @@ nicole = Santa.new(genders[0], ethnicities[2])
 3.times do |santa|
   Santa.new(genders.sample, ethnicities.sample)
 end
+
+puts nick.celebrate_birthday(2)
