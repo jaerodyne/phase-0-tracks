@@ -24,4 +24,26 @@ puts claus.speak
 puts claus.eat_milk_and_cookies("snickerdoodle")
 
 santas = []
-
+genders = [
+"Agender",
+"Androgyne",
+"Androgynous",
+"Bigender",
+"Cis",
+"Cisgender",
+"Cis Female",
+"Cis Male",
+"Cis Man",
+"Cis Woman",
+"Cisgender Female",
+"Cisgender Male",
+"Cisgender Man",
+"Cisgender Woman",
+"Female to Male",
+"FTM",
+"Gender Fluid",
+"Gender Nonconforming",
+"Gender Questioning",
+"Gender Variant",
+"Genderqueer",
+]
