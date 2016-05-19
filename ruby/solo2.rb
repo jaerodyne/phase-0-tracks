@@ -1,3 +1,5 @@
+# generate an outfit from wardrobe hash using Outfit class
+
 class Outfit
 
   attr_reader :name
@@ -26,11 +28,11 @@ class Outfit
 
 end
 
-casual = Outfit.new('shirt', 'jeans', 'nikes', 'oakleys')
-puts "Lookin' so fly in your #{casual.top}, #{casual.bottom}, #{casual.shoes}, and #{casual.accessories}."
-casual.strut
-casual.go_shopping
-casual.donate('ragged toga')
+# casual = Outfit.new('shirt', 'jeans', 'nikes', 'oakleys')
+# puts "Lookin' so fly in your #{casual.top}, #{casual.bottom}, #{casual.shoes}, and #{casual.accessories}."
+# casual.strut
+# casual.go_shopping
+# casual.donate('ragged toga')
 
 wardrobe = {
   tops: ['Star Wars graphic tee', 'blouse', 'dress shirt'],
@@ -39,4 +41,4 @@ wardrobe = {
   accessories: ['Tiffany bracelet', 'Swarovski necklace', 'Rolex']
 }
 
-puts wardrobe[:tops]
+
