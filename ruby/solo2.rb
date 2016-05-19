@@ -15,7 +15,7 @@ class Outfit
   end
 
   def strut
-    puts "I could go down a catwalk wearing this."
+    puts "You could go down a catwalk wearing this."
   end
 
   def go_shopping
@@ -43,47 +43,57 @@ wardrobe = {
 
 #USER INTERFACE
 final_outfit = []
+affirmative = ''
 
-puts "What will you wear today?"
-puts "Here are your options for a top: #{wardrobe[:tops]}"
-puts "Which one would you like?"
-top = gets.chomp
+until affirmative == 'n'
 
-until wardrobe[:tops].include? top
-  puts "That's in the laundry. I think. How about one of these: #{wardrobe[:tops]}"
+  puts "What will you wear today?"
+  puts "Here are your options for a top: #{wardrobe[:tops]}"
+  puts "Which one would you like?"
   top = gets.chomp
-end
 
-final_outfit << top
+  until wardrobe[:tops].include? top
+    puts "That's in the laundry. I think. How about one of these: #{wardrobe[:tops]}"
+    top = gets.chomp
+  end
 
-puts "Here are your options for a bottom: #{wardrobe[:bottoms]}"
-bottom = gets.chomp
+  final_outfit << top
 
-until wardrobe[:bottoms].include? bottom
-  puts "That's in the laundry. I think. How about one of these: #{wardrobe[:bottoms]}"
+  puts "Here are your options for a bottom: #{wardrobe[:bottoms]}"
   bottom = gets.chomp
-end
 
-final_outfit << bottom
+  until wardrobe[:bottoms].include? bottom
+    puts "That's in the laundry. I think. How about one of these: #{wardrobe[:bottoms]}"
+    bottom = gets.chomp
+  end
 
-puts "Here are your options for shoes: #{wardrobe[:shoes]}"
-shoe = gets.chomp
+  final_outfit << bottom
 
-until wardrobe[:shoes].include? shoe
-  puts "That's in the laundry. I think. How about one of these: #{wardrobe[:shoes]}"
+  puts "Here are your options for shoes: #{wardrobe[:shoes]}"
   shoe = gets.chomp
-end
 
-final_outfit << shoe
+  until wardrobe[:shoes].include? shoe
+    puts "That's in the laundry. I think. How about one of these: #{wardrobe[:shoes]}"
+    shoe = gets.chomp
+  end
 
-puts "Here are your options for accessories: #{wardrobe[:accessories]}"
-accessory = gets.chomp
+  final_outfit << shoe
 
-until wardrobe[:accessories].include? accessory
-  puts "That's in the laundry. I think. How about one of these: #{wardrobe[:accessories]}"
+  puts "Here are your options for accessories: #{wardrobe[:accessories]}"
   accessory = gets.chomp
+
+  until wardrobe[:accessories].include? accessory
+    puts "That's in the laundry. I think. How about one of these: #{wardrobe[:accessories]}"
+    accessory = gets.chomp
+  end
+
+  final_outfit << accessory
+
+  final_outfit = final_outfit.join(', ')
+
+  puts "Looking so fly in that #{final_outfit}."
+
+  puts "Do you want to put together another outfit? (y/n)"
+  affirmative = gets.chomp.downcase
+
 end
-
-final_outfit << accessory
-
-puts final_outfit
