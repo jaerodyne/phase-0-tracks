@@ -55,9 +55,8 @@ until wardrobe[:tops].include? top
 end
 
 final_outfit << top
-puts final_outfit
 
-puts "Here are your options for a top: #{wardrobe[:bottoms]}"
+puts "Here are your options for a bottom: #{wardrobe[:bottoms]}"
 bottom = gets.chomp
 
 until wardrobe[:bottoms].include? bottom
@@ -66,9 +65,8 @@ until wardrobe[:bottoms].include? bottom
 end
 
 final_outfit << bottom
-puts final_outfit
 
-puts "Here are your options for a top: #{wardrobe[:shoes]}"
+puts "Here are your options for shoes: #{wardrobe[:shoes]}"
 shoe = gets.chomp
 
 until wardrobe[:shoes].include? shoe
@@ -77,4 +75,15 @@ until wardrobe[:shoes].include? shoe
 end
 
 final_outfit << shoe
+
+puts "Here are your options for accessories: #{wardrobe[:accessories]}"
+accessory = gets.chomp
+
+until wardrobe[:accessories].include? accessory
+  puts "That's in the laundry. I think. How about one of these: #{wardrobe[:accessories]}"
+  accessory = gets.chomp
+end
+
+final_outfit << accessory
+
 puts final_outfit
