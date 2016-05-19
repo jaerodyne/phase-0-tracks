@@ -3,11 +3,9 @@ class Santa
   def initialize(gender, ethnicity)
     @gender = gender
     @ethnicity = ethnicity
-    age = 0
-    reindeer_ranking = ['Rudolph', 'Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', 'Cupid', 'Donner', 'Blitzen']
+    @age = 0
+    @reindeer_ranking = ['Rudolph', 'Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', 'Cupid', 'Donner', 'Blitzen']
     puts 'Initializing Santa instance...'
-    puts @gender
-    puts @ethnicity
   end
 
   def speak
@@ -20,6 +18,15 @@ class Santa
 
   def celebrate_birthday(age)
     age += 1
+  end
+
+  def get_mad_at(reindeer)
+    if @reindeer_ranking.include? reindeer
+      @reindeer_ranking.delete(reindeer)
+      @reindeer_ranking << reindeer
+      puts @reindeer_ranking
+    end
+    puts "Damn you #{reindeer}"
   end
 
 end
@@ -76,3 +83,4 @@ nicole = Santa.new(genders[0], ethnicities[2])
 end
 
 puts nick.celebrate_birthday(2)
+nick.get_mad_at('Dasher')
