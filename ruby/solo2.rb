@@ -1,9 +1,10 @@
 class Outfit
 
-  attr_reader :wardrobe
-  attr_accessor :top, :bottom, :shoes, :accessories
+  attr_reader :name
+  attr_accessor :top, :bottom, :shoes, :accessories, :wardrobe
 
   def initialize(top, bottom, shoes, accessories)
+    @name = "Daily wear"
     @top = top
     @bottom = bottom
     @shoes = shoes
