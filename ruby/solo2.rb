@@ -41,4 +41,9 @@ wardrobe = {
   accessories: ['Tiffany bracelet', 'Swarovski necklace', 'Rolex']
 }
 
+#USER INTERFACE
 
+puts "What will you wear today?"
+puts "Here are your options for a top: #{wardrobe[:tops]}"
+puts "Which one would you like?"
+# outfit = Outfit.new(wardrobe[:tops], wardrobe[:bottoms], wardrobe[:shoes], wardrobe[:accessories])
