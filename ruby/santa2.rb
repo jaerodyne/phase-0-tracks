@@ -3,7 +3,7 @@ class Santa
   attr_reader :age, :ethnicity
   attr_accessor :gender
 
-  def initialize(gender, ethnicity)
+  def initialize(gender, ethnicity, age)
     @gender = gender
     @ethnicity = ethnicity
     @age = age
@@ -34,10 +34,10 @@ class Santa
 
 end
 
-claus = Santa.new('Androgynous', 'Alien Race')
-puts claus
-puts claus.speak
-puts claus.eat_milk_and_cookies('snickerdoodle')
+# claus = Santa.new('Androgynous', 'Alien Race')
+# puts claus
+# puts claus.speak
+# puts claus.eat_milk_and_cookies('snickerdoodle')
 
 santas = []
 # genders = [
@@ -89,4 +89,10 @@ santas = []
 
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+age = 0
 
+50.times do |santa|
+  Santa.new(@gender, @ethnicity, @age)
+  puts "Santa is #{example_genders.sample}, #{example_ethnicities.sample}, and #{rand(0...140)} years old! Yay diversity."
+  puts "---"
+end
