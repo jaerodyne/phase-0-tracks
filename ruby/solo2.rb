@@ -14,6 +14,12 @@ class Outfit
     puts "I could go down a catwalk wearing this."
   end
 
+  def go_shopping
+    puts "Time for retail therapy."
+  end
+
+  
+
 end
 
 casual = Outfit.new('shirt', 'jeans', 'nikes', 'oakleys')
