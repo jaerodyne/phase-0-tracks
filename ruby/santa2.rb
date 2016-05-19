@@ -40,50 +40,53 @@ puts claus.speak
 puts claus.eat_milk_and_cookies('snickerdoodle')
 
 santas = []
-genders = [
-'Agender',
-'Androgyne',
-'Androgynous',
-'Bigender',
-'Cis',
-'Cisgender',
-'Cis Female',
-'Cis Male',
-'Cis Man',
-'Cis Woman',
-'Cisgender Female',
-'Cisgender Male',
-'Cisgender Man',
-'Cisgender Woman',
-'Female to Male',
-'FTM',
-'Gender Fluid',
-'Gender Nonconforming',
-'Gender Questioning',
-'Gender Variant',
-'Genderqueer',
-]
+# genders = [
+# 'Agender',
+# 'Androgyne',
+# 'Androgynous',
+# 'Bigender',
+# 'Cis',
+# 'Cisgender',
+# 'Cis Female',
+# 'Cis Male',
+# 'Cis Man',
+# 'Cis Woman',
+# 'Cisgender Female',
+# 'Cisgender Male',
+# 'Cisgender Man',
+# 'Cisgender Woman',
+# 'Female to Male',
+# 'FTM',
+# 'Gender Fluid',
+# 'Gender Nonconforming',
+# 'Gender Questioning',
+# 'Gender Variant',
+# 'Genderqueer',
+# ]
 
-ethnicities = [
-  'White',
-  'Black',
-  'Filipino',
-  'Chamorro',
-  'Japanese',
-  'Laotian',
-  'Vietnamese',
-  'Chinese',
-  'French',
-  'German',
-  'Italian'
-]
+# ethnicities = [
+#   'White',
+#   'Black',
+#   'Filipino',
+#   'Chamorro',
+#   'Japanese',
+#   'Laotian',
+#   'Vietnamese',
+#   'Chinese',
+#   'French',
+#   'German',
+#   'Italian'
+# ]
 
-nick = Santa.new(genders.sample, ethnicities.sample)
-nicole = Santa.new(genders[0], ethnicities[2])
+# nicole = Santa.new(genders[0], ethnicities[2])
 
-3.times do |santa|
-  Santa.new(genders.sample, ethnicities.sample)
-end
+# 3.times do |santa|
+#   Santa.new(genders.sample, ethnicities.sample)
+# end
 
-puts nick.celebrate_birthday(2)
-nick.get_mad_at('Dasher')
+# puts nicole.celebrate_birthday(2)
+# nicole.get_mad_at('Dasher')
+
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
