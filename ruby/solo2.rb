@@ -1,6 +1,6 @@
 class Outfit
 
-  attr_reader
+  attr_reader :wardrobe
   attr_accessor :top, :bottom, :shoes, :accessories
 
   def initialize(top, bottom, shoes, accessories)
@@ -8,6 +8,7 @@ class Outfit
     @bottom = bottom
     @shoes = shoes
     @accessories = accessories
+    @wardrobe = wardrobe
   end
 
   def strut
