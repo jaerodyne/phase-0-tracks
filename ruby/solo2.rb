@@ -67,3 +67,14 @@ end
 
 final_outfit << bottom
 puts final_outfit
+
+puts "Here are your options for a top: #{wardrobe[:shoes]}"
+shoe = gets.chomp
+
+until wardrobe[:shoes].include? shoe
+  puts "That's in the laundry. I think. How about one of these: #{wardrobe[:shoes]}"
+  shoe = gets.chomp
+end
+
+final_outfit << shoe
+puts final_outfit
