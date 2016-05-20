@@ -33,3 +33,8 @@ class Mascot
   include Shout
 end
 
+dude = Bro.new
+benny = Mascot.new
+
+dude.yell_angrily "What kind of call was that?!?"
+benny.yelling_happily
