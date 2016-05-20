@@ -1,5 +1,12 @@
 module Shout
+  
   def self.yell_angrily(words)
-    words + "!!!" + " :("
+    puts words + "!!!" + " :("
   end
+
+  def self.yelling_happily
+    puts "It's raining men hallelujah!"
+  end
+
 end
+
