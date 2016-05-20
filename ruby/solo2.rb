@@ -22,7 +22,7 @@ class Outfit
   end
 
   def donate(clothing)
-    puts "Let's put this #{clothing} to rest at Goodwill."
+    puts "We'll put this #{clothing} to rest at Goodwill. Eventually."
   end
 
 end
