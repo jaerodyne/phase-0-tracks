@@ -25,3 +25,11 @@ module Shout
 
 end
 
+class Bro
+  include Shout
+end
+
+class Mascot
+  include Shout
+end
+
