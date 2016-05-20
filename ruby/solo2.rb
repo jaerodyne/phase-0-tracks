@@ -84,8 +84,15 @@ until affirmative == 'n'
   
   final_outfit << new_outfit
 
-  puts "Do you want to put together another outfit? (y/n)"
-  affirmative = gets.chomp.downcase
+  puts "Say, does this #{new_outfit.top} look raggedy to you? (y/n)"
+  rags = gets.chomp
+    if rags == 'y'
+      new_outfit.donate(new_outfit.top)
+    else
+      puts "Thanks for your believable input. Do you want to put together another outfit? (y/n)"
+      affirmative = gets.chomp.downcase
+      new_outfit.go_shopping
+    end
 
 end
 
