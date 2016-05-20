@@ -18,7 +18,7 @@ class Outfit
   end
 
   def go_shopping
-    puts "Time for retail therapy."
+    puts "There's always time for retail therapy!"
   end
 
   def donate(clothing)
@@ -81,10 +81,8 @@ until affirmative == 'n'
   end
 
   new_outfit = Outfit.new(top, bottom, shoe, accessory)
-
+  
   final_outfit << new_outfit
-
-  puts final_outfit
 
   puts "Do you want to put together another outfit? (y/n)"
   affirmative = gets.chomp.downcase
