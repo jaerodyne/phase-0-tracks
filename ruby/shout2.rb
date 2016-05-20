@@ -10,3 +10,7 @@ module Shout
 
 end
 
+Shout.yell_angrily 'PARKOUR'
+Shout.yelling_happily
+
+
