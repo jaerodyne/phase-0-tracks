@@ -68,7 +68,7 @@ until affirmative == 'n'
   shoe = gets.chomp
 
   until wardrobe[:shoes].include? shoe
-    puts "That's in the laundry. I think. How about one of these: \n#{wardrobe[:shoes]}"
+    puts "I threw those onto the power lines. How about one of these: \n#{wardrobe[:shoes]}"
     shoe = gets.chomp
   end
 
@@ -76,7 +76,7 @@ until affirmative == 'n'
   accessory = gets.chomp
 
   until wardrobe[:accessories].include? accessory
-    puts "That's in the laundry. I think. How about one of these: \n#{wardrobe[:accessories]}"
+    puts "I don't think that suits me. How about one of these: \n#{wardrobe[:accessories]}"
     accessory = gets.chomp
   end
 
