@@ -16,3 +16,10 @@ function reverseString(str) {
 }
 
 console.log(reverseString("bollocks"));
+
+num1 = 5
+num2 = 4
+
+if (num1 + num2 == 9) {
+  console.log(reverseString("bollocks"));
+}
