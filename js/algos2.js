@@ -23,3 +23,4 @@ function longestWord(array) {
 longestWord(['long word', 'longest word', 'longer word'])
 longestWord(['laryngitis', 'curly', 'moe'])
 longestWord(['semi-automatic', 'onamatopoeia', 'incapicitated'])
+
