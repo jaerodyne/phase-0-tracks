@@ -19,3 +19,7 @@ function longestWord(array) {
 		}
 	return console.log('And the longest word is ' + word + '!')
 }
+
+longestWord(['long word', 'longest word', 'longer word'])
+longestWord(['laryngitis', 'curly', 'moe'])
+longestWord(['semi-automatic', 'onamatopoeia', 'incapicitated'])
