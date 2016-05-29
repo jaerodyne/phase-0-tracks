@@ -50,3 +50,10 @@ function matched(obj1, obj2) {
 matched({name: "Steven", age: 54}, {name: "Tamir", age: 54})
 matched({color: "black", number: 5}, {color: "black", number: 6})
 matched({animal: "puppy", cute: true}, {animal: "cat", cute: true})
+
+// Write a function that takes an integer for length, and builds and returns an array of strings of the given length
+// The words should be of randomly varying length, with a minimum of 1 letter and a maximum of 10 letters
+// Create an empty array to store randomized words
+// Randomize the length of a word and its characters using a-z
+// Until integer length is reached, generate words and push into array
+// Return the array
