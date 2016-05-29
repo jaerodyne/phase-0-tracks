@@ -62,14 +62,14 @@ function randomArray(int) {
   
   var arr = [];
   var word = "";
-  var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
  
   while (arr.length < int) {
-    for ( var i=0; i < str_length ; i++ ) {
+    for ( var i=0; i < Math.floor(Math.random() * (10 - 1 + 1)) + 1 ; i++ ) {
       word += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
       }
      arr.push(word)
+     word = "";
     }
   return arr
 }
