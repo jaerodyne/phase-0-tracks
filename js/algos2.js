@@ -48,4 +48,5 @@ function matched(obj1, obj2) {
 }
 
 matched({name: "Steven", age: 54}, {name: "Tamir", age: 54})
-
+matched({color: "black", number: 5}, {color: "black", number: 6})
+matched({animal: "puppy", cute: true}, {animal: "cat", cute: true})
