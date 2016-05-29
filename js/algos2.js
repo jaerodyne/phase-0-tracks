@@ -74,4 +74,11 @@ function randomArray(int) {
   return arr
 }
 
-randomArray(3)
+// DRIVER CODE
+// Make a random array ten times with a random length from 1-10, push array to longestWord function
+
+for (var j = 0; j <= 10; j++) {
+	var newArray = randomArray(Math.floor((Math.random() * 10) + 1));
+	console.log("This is random array number " + [j] + ": " + newArray)
+	longestWord(newArray)
+}
