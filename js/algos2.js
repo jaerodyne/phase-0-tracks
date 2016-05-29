@@ -24,3 +24,12 @@ longestWord(['long word', 'longest word', 'longer word'])
 longestWord(['laryngitis', 'curly', 'moe'])
 longestWord(['semi-automatic', 'onamatopoeia', 'incapicitated'])
 
+// Write a function that takes two objects and checks to see if the objects share at least one key-value pair
+// compare object1 and object2
+// iterate through each object's keys and values
+// access value in each object using key
+// if a value in object1 matches a value in object2, return true
+// else if nothing matches, return false
+// ex: {name: "Steven", age: 54} and {name: "Tamir", age: 54} returns true because the ages are the same
+
+
