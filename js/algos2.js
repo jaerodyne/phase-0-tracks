@@ -7,8 +7,8 @@
 // else, break loop
 
 function longestWord(array) {
-	var word = ''
-	var count = 0
+	var word = '';
+	var count = 0;
 		for (i = 0; i < array.length; i++ ) {
 			if (array[i].length > count) {
 				word = array[i];
@@ -61,21 +61,21 @@ matched({animal: "puppy", cute: true}, {animal: "cat", cute: true})
 function randomArray(int) {
   
   var arr = [];
-  var word = "";
-  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var word = '';
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
  
   while (arr.length < int) {
     for ( var i=0; i < Math.floor(Math.random() * (10 - 1 + 1)) + 1 ; i++ ) {
       word += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
       }
      arr.push(word)
-     word = "";
+     word = '';
     }
   return arr
 }
 
 // DRIVER CODE
-// Make a random array ten times with a random length from 1-10, push array to longestWord function
+// Make a random array ten times of a random length from 1-10, push array to longestWord function
 
 for (var j = 0; j <= 10; j++) {
 	var newArray = randomArray(Math.floor((Math.random() * 10) + 1));
