@@ -57,3 +57,21 @@ matched({animal: "puppy", cute: true}, {animal: "cat", cute: true})
 // Randomize the length of a word and its characters using a-z
 // Until integer length is reached, generate words and push into array
 // Return the array
+
+function randomArray(int) {
+  
+  var arr = [];
+  var word = "";
+  var str_length = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+ 
+  while (arr.length < int) {
+    for ( var i=0; i < str_length ; i++ ) {
+      word += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+      }
+     arr.push(word)
+    }
+  return arr
+}
+
+randomArray(3)
