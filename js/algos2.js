@@ -32,4 +32,20 @@ longestWord(['semi-automatic', 'onamatopoeia', 'incapicitated'])
 // else if nothing matches, return false
 // ex: {name: "Steven", age: 54} and {name: "Tamir", age: 54} returns true because the ages are the same
 
+function matched(obj1, obj2) {
+  for (var value in obj1) {
+      firstValue = obj1[value];
+    for (value in obj2) {
+    	secondValue = obj2[value];
+	    	if (firstValue === secondValue) {
+    			console.log(firstValue + ' has found its soulmate ' + secondValue);
+    			return true;
+    		} else {
+    	}
+	 }
+  }
+  return false;
+}
+
+matched({name: "Steven", age: 54}, {name: "Tamir", age: 54})
 
