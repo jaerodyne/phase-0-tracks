@@ -1,0 +1,173 @@
+Input:
+SELECT * FROM reviews
+JOIN businesses ON business_id = businesses.id
+JOIN users ON user_id = users.id;
+
+Output:
+1|5|Cool cats hang here|3|7|3|The Beagle Nightclub|7|Denzel|George
+2|4|Instructor is flexible, maybe too flexible|4|3|4|Lotus Yoga|3|Angela|Jolie
+3|3|No caviar served here, it's meh at best|6|7|6|Sushi World|7|Denzel|George
+
+Input:
+SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+FROM reviews
+INNER JOIN users
+INNER JOIN businesses;
+
+Output:
+Bradford|Pitt|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Bradford|Pitt|Amir's Towing|5|Cool cats hang here
+Bradford|Pitt|The Beagle Nightclub|5|Cool cats hang here
+Bradford|Pitt|Lotus Yoga|5|Cool cats hang here
+Bradford|Pitt|Plumbing by Janet|5|Cool cats hang here
+Bradford|Pitt|Sushi World|5|Cool cats hang here
+Bradford|Pitt|JoeBob's Sportz Barn|5|Cool cats hang here
+Mandy|Kaling|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Mandy|Kaling|Amir's Towing|5|Cool cats hang here
+Mandy|Kaling|The Beagle Nightclub|5|Cool cats hang here
+Mandy|Kaling|Lotus Yoga|5|Cool cats hang here
+Mandy|Kaling|Plumbing by Janet|5|Cool cats hang here
+Mandy|Kaling|Sushi World|5|Cool cats hang here
+Mandy|Kaling|JoeBob's Sportz Barn|5|Cool cats hang here
+Angela|Jolie|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Angela|Jolie|Amir's Towing|5|Cool cats hang here
+Angela|Jolie|The Beagle Nightclub|5|Cool cats hang here
+Angela|Jolie|Lotus Yoga|5|Cool cats hang here
+Angela|Jolie|Plumbing by Janet|5|Cool cats hang here
+Angela|Jolie|Sushi World|5|Cool cats hang here
+Angela|Jolie|JoeBob's Sportz Barn|5|Cool cats hang here
+Steven|Wonder|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Steven|Wonder|Amir's Towing|5|Cool cats hang here
+Steven|Wonder|The Beagle Nightclub|5|Cool cats hang here
+Steven|Wonder|Lotus Yoga|5|Cool cats hang here
+Steven|Wonder|Plumbing by Janet|5|Cool cats hang here
+Steven|Wonder|Sushi World|5|Cool cats hang here
+Steven|Wonder|JoeBob's Sportz Barn|5|Cool cats hang here
+Holly|Berry|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Holly|Berry|Amir's Towing|5|Cool cats hang here
+Holly|Berry|The Beagle Nightclub|5|Cool cats hang here
+Holly|Berry|Lotus Yoga|5|Cool cats hang here
+Holly|Berry|Plumbing by Janet|5|Cool cats hang here
+Holly|Berry|Sushi World|5|Cool cats hang here
+Holly|Berry|JoeBob's Sportz Barn|5|Cool cats hang here
+Merryl|Streepman|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Merryl|Streepman|Amir's Towing|5|Cool cats hang here
+Merryl|Streepman|The Beagle Nightclub|5|Cool cats hang here
+Merryl|Streepman|Lotus Yoga|5|Cool cats hang here
+Merryl|Streepman|Plumbing by Janet|5|Cool cats hang here
+Merryl|Streepman|Sushi World|5|Cool cats hang here
+Merryl|Streepman|JoeBob's Sportz Barn|5|Cool cats hang here
+Denzel|George|Grundy Hollow Wedding Chapel|5|Cool cats hang here
+Denzel|George|Amir's Towing|5|Cool cats hang here
+Denzel|George|The Beagle Nightclub|5|Cool cats hang here
+Denzel|George|Lotus Yoga|5|Cool cats hang here
+Denzel|George|Plumbing by Janet|5|Cool cats hang here
+Denzel|George|Sushi World|5|Cool cats hang here
+Denzel|George|JoeBob's Sportz Barn|5|Cool cats hang here
+Bradford|Pitt|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|Sushi World|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|Sushi World|4|Instructor is flexible, maybe too flexible
+Mandy|Kaling|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|Sushi World|4|Instructor is flexible, maybe too flexible
+Angela|Jolie|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|Sushi World|4|Instructor is flexible, maybe too flexible
+Steven|Wonder|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Holly|Berry|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Holly|Berry|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Holly|Berry|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Holly|Berry|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Holly|Berry|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Holly|Berry|Sushi World|4|Instructor is flexible, maybe too flexible
+Holly|Berry|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|Sushi World|4|Instructor is flexible, maybe too flexible
+Merryl|Streepman|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Denzel|George|Grundy Hollow Wedding Chapel|4|Instructor is flexible, maybe too flexible
+Denzel|George|Amir's Towing|4|Instructor is flexible, maybe too flexible
+Denzel|George|The Beagle Nightclub|4|Instructor is flexible, maybe too flexible
+Denzel|George|Lotus Yoga|4|Instructor is flexible, maybe too flexible
+Denzel|George|Plumbing by Janet|4|Instructor is flexible, maybe too flexible
+Denzel|George|Sushi World|4|Instructor is flexible, maybe too flexible
+Denzel|George|JoeBob's Sportz Barn|4|Instructor is flexible, maybe too flexible
+Bradford|Pitt|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Bradford|Pitt|Amir's Towing|3|No caviar served here, it's meh at best
+Bradford|Pitt|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Bradford|Pitt|Lotus Yoga|3|No caviar served here, it's meh at best
+Bradford|Pitt|Plumbing by Janet|3|No caviar served here, it's meh at best
+Bradford|Pitt|Sushi World|3|No caviar served here, it's meh at best
+Bradford|Pitt|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+Mandy|Kaling|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Mandy|Kaling|Amir's Towing|3|No caviar served here, it's meh at best
+Mandy|Kaling|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Mandy|Kaling|Lotus Yoga|3|No caviar served here, it's meh at best
+Mandy|Kaling|Plumbing by Janet|3|No caviar served here, it's meh at best
+Mandy|Kaling|Sushi World|3|No caviar served here, it's meh at best
+Mandy|Kaling|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+Angela|Jolie|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Angela|Jolie|Amir's Towing|3|No caviar served here, it's meh at best
+Angela|Jolie|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Angela|Jolie|Lotus Yoga|3|No caviar served here, it's meh at best
+Angela|Jolie|Plumbing by Janet|3|No caviar served here, it's meh at best
+Angela|Jolie|Sushi World|3|No caviar served here, it's meh at best
+Angela|Jolie|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+Steven|Wonder|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Steven|Wonder|Amir's Towing|3|No caviar served here, it's meh at best
+Steven|Wonder|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Steven|Wonder|Lotus Yoga|3|No caviar served here, it's meh at best
+Steven|Wonder|Plumbing by Janet|3|No caviar served here, it's meh at best
+Steven|Wonder|Sushi World|3|No caviar served here, it's meh at best
+Steven|Wonder|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+Holly|Berry|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Holly|Berry|Amir's Towing|3|No caviar served here, it's meh at best
+Holly|Berry|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Holly|Berry|Lotus Yoga|3|No caviar served here, it's meh at best
+Holly|Berry|Plumbing by Janet|3|No caviar served here, it's meh at best
+Holly|Berry|Sushi World|3|No caviar served here, it's meh at best
+Holly|Berry|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+Merryl|Streepman|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Merryl|Streepman|Amir's Towing|3|No caviar served here, it's meh at best
+Merryl|Streepman|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Merryl|Streepman|Lotus Yoga|3|No caviar served here, it's meh at best
+Merryl|Streepman|Plumbing by Janet|3|No caviar served here, it's meh at best
+Merryl|Streepman|Sushi World|3|No caviar served here, it's meh at best
+Merryl|Streepman|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+Denzel|George|Grundy Hollow Wedding Chapel|3|No caviar served here, it's meh at best
+Denzel|George|Amir's Towing|3|No caviar served here, it's meh at best
+Denzel|George|The Beagle Nightclub|3|No caviar served here, it's meh at best
+Denzel|George|Lotus Yoga|3|No caviar served here, it's meh at best
+Denzel|George|Plumbing by Janet|3|No caviar served here, it's meh at best
+Denzel|George|Sushi World|3|No caviar served here, it's meh at best
+Denzel|George|JoeBob's Sportz Barn|3|No caviar served here, it's meh at best
+
+Input:
+SELECT * FROM businesses
+JOIN reviews
+JOIN users
+LIMIT 1;
+
+Output:
+1|Grundy Hollow Wedding Chapel|1|5|Cool cats hang here|3|7|1|Bradford|Pitt
