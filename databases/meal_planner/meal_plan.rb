@@ -12,6 +12,7 @@ create_table_cmd = <<-SQL
   CREATE TABLE IF NOT EXISTS meals(
     id INTEGER PRIMARY KEY,
     name VARCHAR(255)
+  );
 SQL
 
 db.execute(create_table_cmd)
@@ -27,4 +28,10 @@ dinner = ["Mason Jar Lasagna", "Shepherd's Pie", "Cornbread Chili", "BBQ Sundae 
 
 def create_plan(db, name)
   db.execute("INSERT INTO meals (name) VALUES (?)", [name])
+end
+
+7.times do
+  create_plan(db, meal_generator(breakfast.sample))
+  create_plan(db, meal_generator(lunch.sample))
+  create_plan(db, meal_generator(dinner.sample))
 end
