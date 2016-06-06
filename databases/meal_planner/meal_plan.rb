@@ -5,20 +5,20 @@
 
 require 'sqlite3'
 
-db = SQLite3::Database.new("meal_plan.db")
+db = SQLite3::Database.new("meals.db")
 db.results_as_hash = true
 
 create_table_cmd = <<-SQL
-  CREATE TABLE IF NOT EXISTS meal_plan(
+  CREATE TABLE IF NOT EXISTS meals(
     id INTEGER PRIMARY KEY,
     name VARCHAR(255),
     type_id INT
     FOREIGN KEY (type_id) REFERENCES types(id)
   )
+  CREATE TABLE types(
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(255)
+  )
 SQL
 
-def meal_generator(breakfast, lunch, dinner)
-  breakfast
-  lunch
-  dinner
-end
+db.execute(create_table_cmd)
