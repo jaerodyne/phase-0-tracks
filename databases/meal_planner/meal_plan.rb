@@ -23,5 +23,5 @@ end
 
 breakfast = ["Fruit Soup with Nuts", "Blueberry and Grilled Peach Quinoa Parfait", "Bacon and Eggs in a Jar", "Cinnamon Rolls"]
 lunch = ["Chicken Taco Salad", "Almost Instant Noodle Soup", "Mason Jar Pesto Pasta", "Deconstructed Sushi"]
-dinner = ["Mason Jar Lasagna", "Shepherd's Pie", "Cornbread Chili"]
+dinner = ["Mason Jar Lasagna", "Shepherd's Pie", "Cornbread Chili", "BBQ Sundae Supper"]
 
