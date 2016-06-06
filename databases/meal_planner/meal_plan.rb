@@ -5,6 +5,9 @@
 
 require 'sqlite3'
 
+db = SQLite3::Database.new("meal_plan.db")
+db.results_as_hash = true
+
 def meal_generator(breakfast, lunch, dinner)
   breakfast
   lunch
