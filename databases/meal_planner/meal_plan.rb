@@ -23,3 +23,9 @@ SQL
 
 db.execute(create_table_cmd)
 db.execute("INSERT INTO meals (name) VALUES ('Fruit Soup with Nuts')")
+
+def meal_generator(breakfast, lunch, dinner)
+  breakfast
+  lunch
+  dinner
+end
