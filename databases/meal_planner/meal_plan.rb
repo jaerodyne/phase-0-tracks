@@ -29,3 +29,7 @@ def meal_generator(breakfast, lunch, dinner)
   lunch
   dinner
 end
+
+breakfast = ["Fruit Soup with Nuts", "Blueberry and Grilled Peach Quinoa Parfait", "Bacon and Eggs in a Jar"]
+
+
