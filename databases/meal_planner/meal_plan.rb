@@ -12,13 +12,14 @@ create_table_cmd = <<-SQL
   CREATE TABLE IF NOT EXISTS meals(
     id INTEGER PRIMARY KEY,
     name VARCHAR(255),
-    type_id INT
+    type_id INT,
     FOREIGN KEY (type_id) REFERENCES types(id)
-  )
-  CREATE TABLE types(
+  );
+  CREATE TABLE IF NOT EXISTS types(
     id INTEGER PRIMARY KEY,
     name VARCHAR(255)
-  )
+  );
 SQL
 
 db.execute(create_table_cmd)
+db.execute("INSERT INTO meals (name) VALUES ('Fruit Soup with Nuts')")
