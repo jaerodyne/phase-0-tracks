@@ -25,3 +25,6 @@ breakfast = ["Fruit Soup with Nuts", "Blueberry and Grilled Peach Quinoa Parfait
 lunch = ["Chicken Taco Salad", "Almost Instant Noodle Soup", "Mason Jar Pesto Pasta", "Deconstructed Sushi"]
 dinner = ["Mason Jar Lasagna", "Shepherd's Pie", "Cornbread Chili", "BBQ Sundae Supper"]
 
+def create_plan(db, name)
+  db.execute("INSERT INTO meals (name) VALUES (?)", [name])
+end
