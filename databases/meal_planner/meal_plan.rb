@@ -31,5 +31,6 @@ def meal_generator(breakfast, lunch, dinner)
 end
 
 breakfast = ["Fruit Soup with Nuts", "Blueberry and Grilled Peach Quinoa Parfait", "Bacon and Eggs in a Jar"]
+lunch = ["Chicken Taco Salad", "Almost Instant Noodle Soup", "Mason Jar Pesto Pasta"]
 
 
