@@ -15,6 +15,10 @@ get '/' do
   erb :home
 end
 
+get '/students/new' do
+  erb :new_student
+end
+
 #show playlist
 get '/playlist' do
   @playlist_database = playlist_database.execute("SELECT * FROM songs")
