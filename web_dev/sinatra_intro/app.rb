@@ -50,3 +50,12 @@ get '/contact' do
   City: PBS<br>
   Zip code: 77777<br>"
 end
+
+get '/great_job' do
+  name = params[:name]
+  if name
+    "Good job, #{params[:name]}!"
+  else
+    "Good job!"
+  end
+end
