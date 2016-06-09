@@ -1,3 +1,14 @@
 body {
   font-family: Helvetica;
 }
+
+#add {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: red;
+    height: 20px;
+    padding: 10px;
+    font-family: Times New Roman;
+}
