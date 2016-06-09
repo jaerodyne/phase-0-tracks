@@ -4,6 +4,11 @@
 </head>
 <body>
   <h1>Here's your current playlist:</h1>
-  
+  <ol>
+    <% @songs.each do |song| %>
+      <li><%= song['name'] %>, <%= song['artist'] %>
+      </li>
+    <% end %>
+  </ol>
 </body>
 </html>
