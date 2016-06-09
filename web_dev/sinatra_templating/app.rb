@@ -6,6 +6,8 @@ set :public_folder, File.dirname(__FILE__) + '/static'
 
 db = SQLite3::Database.new("students.db")
 db.results_as_hash = true
+playlist_database = SQLite3::Database.new("playlist.db")
+playlist_database.results_as_hash = true
 
 # show students on the home page
 get '/' do
@@ -17,6 +19,12 @@ get '/students/new' do
   erb :new_student
 end
 
+#show playlist
+get '/playlist' do
+  @playlist_database = playlist_database.execute("SELECT * FROM songs")
+  erb :playlist
+end
+
 # create new students via
 # a form
 post '/students' do
@@ -25,3 +33,4 @@ post '/students' do
 end
 
 # add static resources
+
