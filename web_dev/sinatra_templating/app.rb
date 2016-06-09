@@ -15,14 +15,14 @@ get '/' do
   erb :home
 end
 
-get '/students/new' do
-  erb :new_student
-end
-
 #show playlist
 get '/playlist' do
   @playlist_database = playlist_database.execute("SELECT * FROM songs")
   erb :playlist
+end
+
+get '/song/new' do
+  erb :new_song
 end
 
 # create new students via
@@ -34,3 +34,7 @@ end
 
 # add static resources
 
+post '/playlist' do
+  playlist_database.execute("INSERT INTO songs (name, artist) VALUES (?,?)", params['name'], params['artist'])
+  redirect '/playlist'
+end
